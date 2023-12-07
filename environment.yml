@@ -1,0 +1,10 @@
+name: aoc-2023-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - flake8
+  - mypy
+  - numpy
+  - pip
