@@ -20,8 +20,10 @@ def get_num(line: str, i: int) -> Optional[int]:
     if line[i].isnumeric():
         return int(l[i])
     for j in range(3, 6):
-        if line[i:i+j] in d:
-            return d[line[i:i+j]]
+        if line[i:i + j] in d:
+            return d[line[i:i + j]]
+    return None
+
 
 s = 0
 for l in lines:

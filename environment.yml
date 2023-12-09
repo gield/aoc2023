@@ -4,7 +4,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.12
-  - flake8
+  - flake8>=5.0
   - mypy
   - numpy
   - pip

@@ -9,7 +9,7 @@ with open("input.txt", "r") as f:
 total_num = 0
 for _, game in enumerate(lines):
     sets = game.split(": ")[1].split("; ")
-    min_num_colors = defaultdict(int)
+    min_num_colors: defaultdict[str, int] = defaultdict(int)
     for s in sets:
         num_colors = {c: int(n) for (n, c) in re.findall(r"(\d+) (\w+)", s)}
         for color, n in num_colors.items():
